@@ -1,0 +1,228 @@
+/* ^ RESET INICIAL */
+
+body,h1,h2,p,ul,li,a {
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+img {
+
+    display: block;
+    max-width: 100%;
+
+}
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+/* & PALETA DE CORES VARIAVEIS DO PROJETO */
+
+:root {
+
+    --bg-color-suberinfo: #122ab2;
+    --bg-color-header: #2c70ff;
+    --bg-color-produtos: #f7f7f7;
+
+    --color-white-padrao: #ffffff;
+    --primary-text-titulos-color: #222222;
+    --secondary-text-paragrafos-color: #7c7c7c;
+    --teciary-color-titulos-produtos: #a4a4a4;
+    --quartiary-color-text-section-pricing: #7c7c7c;
+    --quintiary-color-titulos-section-qualidade: #a4a4a4;
+    --sectinary-color-text-section-qualidade: #7e7e7e;
+    --sectiary-color-text-section-newsletter: #7c7d83;
+
+    --color-line-divisor-sections: #3d7cff;
+    --color-line-divisor-section-pricing: #f7f7f7;
+
+    --color-destaque-card-produtos-puple: #ae81ff;
+    --color-destaque-card-produtos-pink: #f9265e;
+    --color-destaque-card-produtos-blue: #66d9eb;
+
+}
+
+body {
+
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    color: var(--primary-text-titulos-color);
+
+}
+
+/* ~ SEPERINFO-BG */
+
+.superinfo-bg {
+
+    background: var(--bg-color-suberinfo);
+    color: var(--color-white-padrao);
+
+}
+
+.superinfo {
+
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+}
+
+.superinfo p,
+.superinfo a {
+
+    margin: 0 10px 10px 10px;
+
+}
+
+.superinfo a {
+
+    color: var(--color-white-padrao);
+
+}
+
+/* ~ HEADER - MENU */
+
+.menu-bg {
+
+    background: var(--bg-color-header);
+
+}
+
+.menu {
+
+    width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu .menu-logo a {
+
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+
+}
+
+.menu a {
+
+    color: var(--color-white-padrao);
+
+}
+
+.menu .menu-nav ul {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.menu .menu-nav ul li a {
+
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.menu-nav ul li a:hover {
+
+    color: var(--bg-color-suberinfo);
+
+}
+
+/* ~ INTRDUÇÃO */
+
+.introducao {
+
+    font-size: 3em;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+
+}
+
+/* ~ SOBRE */
+
+.sobre {
+
+    border-top: 2px solid var(--color-line-divisor-sections);
+    border-bottom: 2px solid var(--color-line-divisor-sections);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.sobre-info {
+
+    flex: 2 1 300px;
+    margin: 0px 10px;
+
+}
+
+.sobre-info h1 {
+
+    font-size: 3em;
+    margin-bottom: 0.5em;
+
+}
+
+.sobre-info p {
+
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: var(--secondary-text-paragrafos-color); 
+
+}
+
+.sobre-img {
+
+    flex: 1 1 160px;
+    margin: 0px 10px;
+
+}
+
+.sobre-img img {
+    
+    filter: drop-shadow( 1px 11px 5px #848389)  blur(1px);
+    transition: transform 0.3s ease-in-out ;
+    cursor: pointer;
+
+}
+
+.sobre-img img:hover {
+
+    filter: blur(0);
+    transform: translateY(4px) scale(105%);
+
+}
